@@ -5,7 +5,12 @@ The set-up of the Google Colab Jupyter Notebook from [the fastai website](https:
 though signing up for the Microsoft Azure account was a bit of a pain. From first impressions, the notebook is well formatted and laid-out,
 easy to follow and very interactive - everything looks great thus far. 
 ### Background on Deep Learning
-Chapter 2 begin
+Chapter 2 begins by providing a background on Deep Learning. This introduction serves to remind users to maintain an open mind - 
+that underestimating the constraints and capabilities of deep learning can be problematic, and sometimes the solution is simpler or less-complex
+than one might expect.\
+Computer vision is highlighted as a major field in which deep learning can assist - namely, object recognition and detection (e.g. in radiology).
+However, deep learning is faulted in that its models generally can't recognise or detect images or objects that are not used in its training 
+images. 
 ### Drivetrain Approach
 ### Practical - Bear Classification
 #### Data Loaders
