@@ -1,0 +1,85 @@
+# Chapters 2 - 3: Production and Ethics 
+## Chapter 2: Production
+### Setting Up
+The set-up of the Google Colab Jupyter Notebook from [the fastai website](https://course.fast.ai/Resources/book.html) was extremely easy,
+though signing up for the Microsoft Azure account was a bit of a pain. From first impressions, the notebook is well formatted and laid-out,
+easy to follow and very interactive - everything looks great thus far. 
+### Background on Deep Learning
+Chapter 2 begin
+### Drivetrain Approach
+### Practical - Bear Classification
+#### Data Loaders
+#### Data Augmentation
+#### Training and Output
+### Online Application
+
+## Chapter 3 Ethics
+###
+
+
+Jekyll requires blog post files to be named according to the following format:
+
+`YEAR-MONTH-DAY-filename.md`
+
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `filename` is whatever file name you choose, to remind yourself what this post is about. `.md` is the file extension for markdown files.
+
+The first line of the file should start with a single hash character, then a space, then your title. This is how you create a "*level 1 heading*" in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line `## File names` above.
+
+## Basic formatting
+
+You can use *italics*, **bold**, `code font text`, and create [links](https://www.markdownguide.org/cheat-sheet/). Here's a footnote [^1]. Here's a horizontal rule:
+
+---
+
+## Lists
+
+Here's a list:
+
+- item 1
+- item 2
+
+And a numbered list:
+
+1. item 1
+1. item 2
+
+## Boxes and stuff
+
+> This is a quotation
+
+{% include alert.html text="You can include alert boxes" %}
+
+...and...
+
+{% include info.html text="You can include info boxes" %}
+
+## Images
+
+![](/images/logo.png "fast.ai's logo")
+
+## Code
+
+General preformatted text:
+
+    # Do a thing
+    do_thing()
+
+Python code and output:
+
+```python
+# Prints '2'
+print(1+1)
+```
+
+    2
+
+## Tables
+
+| Column 1 | Column 2 |
+|-|-|
+| A thing | Another thing |
+
+## Footnotes
+
+[^1]: This is the footnote.
+
