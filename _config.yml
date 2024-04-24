@@ -10,71 +10,40 @@ title: Super Cool fastai Blog
 description: An objectively super cool blog depicting my trials, tribulations and learnings as I progress through the fastai course.
 github_username: bree-hoff
 
-# # Email and twitter are optional:
-# email:
-# twitter_username:
+# Email and twitter are optional:
+email:
+twitter_username:
 
-# # Set this to true to get LaTeX math equation support
-# use_math:
+# Set this to true to get LaTeX math equation support
+use_math:
 
-# # Add your Google Analytics ID here if you have one and want to use it
-# google_analytics:
+# Add your Google Analytics ID here if you have one and want to use it
+google_analytics:
 
-# # Everything below here can be ignored, unless you want to change the theme entirely
-# theme: minima
-# plugins:
-#   - jekyll-feed
-#   - jekyll-gist
-#   - jekyll-octicons
-#   - jekyll-github-metadata
-
-# titles_from_headings:
-#   enabled:     true
-#   strip_title: true
-#   collections: true
-
-# highlighter: rouge
-# markdown: kramdown
-# kramdown:
-#   math_engine: katex
-#   input: GFM
-#   auto_ids: true
-#   hard_wrap: false
-#   syntax_highlighter: rouge
-
-# permalink: /:slug
-
-# favicon: "./favicon-16x16.png?" # relative path to site's favicon
-
-#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
-remote_theme: abhinavs/moonwalk
-
-theme_config:
-  appearance: "dark" # can be "light", "dark" or "auto"
-  appearance_toggle: true # if appearance can be switched by user
-  back_home_text: "home.." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description
-  show_navbar: true # show horizontal navbar
-  show_footer: false # show footer links in home page,add in _data/home.yml
-  show_copyright: true # show copyright notice in footer
-  # following keys are using to create home layout
-  show_projects: false # show projects as cards, add in _data/home.yml
-  show_blog: true # show blog posts added in _posts
-  show_old_projects: false # show old projects as cards, add in _data/home.yml
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
-  show_reading_time: true # show number of words and reading time in the blog posts
-  show_tags: true # show tags in a blog posts
-  # options for "home" page
-  home:
-    title_misc_list: Details
-    title_blog: Blog
-
-highlighter: rouge
-
-sass:
-  style: compressed
-
+# Everything below here can be ignored, unless you want to change the theme entirely
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-octicons
+  - jekyll-github-metadata
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Add dark mode settings
+minima:
+  dark_mode: true
+
+
