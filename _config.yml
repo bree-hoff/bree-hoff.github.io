@@ -42,9 +42,9 @@ github_username: bree-hoff
 #   hard_wrap: false
 #   syntax_highlighter: rouge
 
-permalink: /:slug
+# permalink: /:slug
 
-favicon: "./favicon-16x16.png?" # relative path to site's favicon
+# favicon: "./favicon-16x16.png?" # relative path to site's favicon
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
