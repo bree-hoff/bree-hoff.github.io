@@ -1,0 +1,43 @@
+# Chapter 4: MNIST Basics
+This chapter began by extending my knowledge from creating a Tensor from a single image to creating a Tensor with all images in the directory,
+as is done in the code snippet below. The use of a tensor makes:\
+<img width="436" alt="image" src="https://github.com/bree-hoff/bree-hoff.github.io/assets/111101248/77c83292-f02b-4405-a106-67298e1f1eea"> \
+By stacking this data into a single three dimensional tensor, and calculating the mean of each pixel in the three- and seven-digit tensors, 
+average images like the ones below is derived.\
+![image](https://github.com/bree-hoff/bree-hoff.github.io/assets/111101248/f2bd6b2f-057b-493e-94c6-edd7e41399d3)
+![image](https://github.com/bree-hoff/bree-hoff.github.io/assets/111101248/64bfbbb4-9e06-481a-90c9-a9d27036be92) \
+The simple loss functions, like root mean squared error and mean absolute difference, yielded good outcomes for a random '3' compared against 
+the average '3' and '7'. Over 90% accuracy on '3' vs '7' detection was surprising - it's crazy to think that algorithm based on a relatively
+simple loss function could be so successful. Pytorch tensor shape compatibility is highlighted in this section - but note to self, *triple check 
+tensor operations when coding from scratch, it may not throw an error*. 
+The machine learning steps are formulated clearly:
+1. Initialise the weights
+2. Predict the outcome
+3. Calculate the model's loss, and thus how good it is
+4. Calculate the gradient, and how changing weights would affect loss
+5. Step all of the weights
+6. Repeat from Step 2
+7. Stop when the model is good enough, or taking too long to process \
+
+The code associated with this is displayed quite clearly, namely the Pytorch requires_grad_(), backward() and grad() functions. The outcome
+of these iterated weight updates can be seen below. \
+```python
+_,axs = plt.subplots(1,4,figsize=(12,3))
+for ax in axs: show_preds(apply_step(params, False), ax)
+plt.tight_layout()
+```
+![image](https://github.com/bree-hoff/bree-hoff.github.io/assets/111101248/500fa82d-43ed-416e-80cf-ea0dd8681c99) \
+It is noted that a Sigmoid function is added to the developed MNIST loss function, to smooth the input into a value between 0 and 1,
+which its increase nature helpful for finding meaningful gradients. The MNIST loss function itself calculates the distance between 
+predictions and targets.
+```python
+def mnist_loss(predictions, targets):
+    predictions = predictions.sigmoid()
+    return torch.where(targets==1, 1-predictions, predictions).mean()
+```
+It was interesting to note, later on in this chapter that a neural net only requires something non-linear between two classifiers.
+By the end of this chapter, it was rewarding to see that we had just created a model with 99.7% accuracy, thanks to optimizers
+and an 18-layer model. 
+This chapter was important to understand a ground-up creation of a convolutional neural network (CNN), and the steps involved in handwriting
+detection. I'm excited to explore the application of this model across a larger range of numerical values, and potentially even letters,
+for postal services, smart tablets, and banking and finance.
