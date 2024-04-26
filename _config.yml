@@ -42,8 +42,3 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 
-# Add dark mode settings
-minima:
-  dark_mode: true
-
-
